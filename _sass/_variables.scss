@@ -9,7 +9,7 @@
 $doc-font-size              : 16;
 
 /* paragraph indention */
-$paragraph-indent           : false; // true, false (default)
+$paragraph-indent           : false; // true, false ()
 $indent-var                 : 1.3em;
 
 /* system typefaces */
@@ -53,20 +53,20 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$background-color: #141010 !default;
-$text-color: #fff6fb !default;
-$primary-color: #f21368 !default;
-$border-color: mix(#fff, $background-color, 20%) !default;
-$code-background-color: mix(#000, $background-color, 15%) !default;
-$code-background-color-dark: mix(#000, $background-color, 20%) !default;
-$form-background-color: mix(#000, $background-color, 15%) !default;
-$footer-background-color: mix($primary-color, #000, 10%) !default;
-$link-color: $primary-color !default;
-$link-color-hover: mix(#fff, $link-color, 25%) !default;
-$link-color-visited: mix(#000, $link-color, 25%) !default;
-$masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
-$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+$background-color           : #141010;
+$text-color                 : #fff6fb;
+$primary-color              : #f21368;
+$border-color               : mix(#fff, $background-color, 20%);
+$code-background-color      : mix(#000, $background-color, 15%);
+$code-background-color-dark : mix(#000, $background-color, 20%);
+$form-background-color      : mix(#000, $background-color, 15%);
+$footer-background-color    : mix($primary-color, #000, 10%);
+$link-color                 : $primary-color;
+$link-color-hover           : mix(#fff, $link-color, 25%);
+$link-color-visited         : mix(#000, $link-color, 25%);
+$masthead-link-color        : $text-color;
+$masthead-link-color-hover  : mix(#000, $text-color, 20%);
+$navicon-link-color-hover   : mix(#000, $background-color, 30%);
 
 $success-color              : #62c462;
 $warning-color              : #f89406;
@@ -117,11 +117,11 @@ $large                      : 1200px;
 $x-large                    : 1800px;
 */
 
-$small                      : 600px !default;
-$medium                     : 768px !default;
-$medium-wide                : 900px !default;
-$large                      : 925px !default;
-$x-large                    : 1280px !default;
+$small                      : 600px !;
+$medium                     : 768px !;
+$medium-wide                : 900px !;
+$large                      : 925px !;
+$x-large                    : 1280px !;
 
 /*
    Grid
