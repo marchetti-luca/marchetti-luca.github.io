@@ -37,6 +37,6 @@
     {% endif %}
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<font size=”2” class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</font>{% endif %}
+    {% if post.excerpt %}<font size=”4” class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</font>{% endif %}
   </article>
 </div>
