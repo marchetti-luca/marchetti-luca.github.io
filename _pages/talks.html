@@ -12,17 +12,17 @@ author_profile: true
 {% endif %}
 
 <h2 id="active">
-Talks
+Conferences and workshops
 </h2>
 
-{% for post in site.talks/contributed reversed %}
+{% for post in site.talks/conferences reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
 
 <h2 id="active">
-Talks
+Seminar series
 </h2>
 
-{% for post in site.talks/conf_and_work reversed %}
+{% for post in site.talks/seminars reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
