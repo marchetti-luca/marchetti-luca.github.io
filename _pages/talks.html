@@ -20,7 +20,7 @@ Conferences and workshops
 </h2>
 
 {% for post in site.talks reversed %}
-  {% if post.collection contains 'conferences' %}
+  {% if post.header.collection contains 'conferences' %}
 
   {% include archive-single-talk.html %}
 
