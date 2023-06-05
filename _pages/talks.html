@@ -19,6 +19,10 @@ author_profile: true
 Conferences and workshops
 </h2>
 
-{% for post in site.talks.conferences reversed %}
+{% for post in site.talks reversed %}
+  {% if post.collection == conferences %}
+
   {% include archive-single-talk.html %}
+
+  {% endif %}
 {% endfor %}
