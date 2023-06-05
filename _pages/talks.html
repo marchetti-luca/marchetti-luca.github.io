@@ -14,17 +14,3 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
-
-<h2 id="active">
-Conferences and workshops
-</h2>
-
-{% for post in site.talks reversed %}
-  {% if post.header.collection contains "conferences" %}
-
-  {% include archive-single-talk.html %}
-
-  {% endif %}
-{% endfor %}
-
-<p>ciaone</p>
