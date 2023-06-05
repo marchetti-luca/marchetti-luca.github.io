@@ -22,7 +22,7 @@ Conferences and workshops
 {% for post in site.talks reversed %}
   {% if post.collection %}
 
-  <p>ciao</p>
+  {% include archive-single-talk.html %}
 
   {% endif %}
 {% endfor %}
