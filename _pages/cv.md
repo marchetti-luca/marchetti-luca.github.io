@@ -1,6 +1,6 @@
 ---
-layout: archive
-title: "Curriculum Vitae"
+layout: single
+title:
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,20 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Physics, Università di Pisa (Pisa, Italy) in cotutelle with LMU Munich (Munich, Germany), 2022
-* M.S. in Physics, Università di Pisa (Pisa, Italy), 2018
-* B.S. in Physics, Università di Pisa (Pisa, Italy), 2015
+If file does not load below, click [THIS LINK](https://marchetti-luca.github.io/files/blank.pdf) to download.
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+<embed src="{{ site.baseurl }}/files/blank.pdf" width="650" height="800" type='application/pdf'>
