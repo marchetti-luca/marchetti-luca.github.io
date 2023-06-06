@@ -20,11 +20,9 @@ Conferences and workshops
 </h2>
 
 {% for post in site.talks reversed %}
-  {% if post.header.conferences %}
+  {% if post.conferences %}
 
   {% include archive-single-talk.html %}
 
   {% endif %}
 {% endfor %}
-
-<p>ciaone</p>
