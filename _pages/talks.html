@@ -11,16 +11,24 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
-
 <h2 id="active">
 Conferences and workshops
 </h2>
 
 {% for post in site.talks reversed %}
   {% if post.conferences %}
+
+  {% include archive-single-talk.html %}
+
+  {% endif %}
+{% endfor %}
+
+<h2 id="active">
+Seminar series
+</h2>
+
+{% for post in site.talks reversed %}
+  {% if post.seminars %}
 
   {% include archive-single-talk.html %}
 
