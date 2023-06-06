@@ -12,6 +12,18 @@ author_profile: true
 {% endif %}
 
 <h2 id="active">
+Upcoming presentations
+</h2>
+
+{% for post in site.talks reversed %}
+  {% if post.upcoming %}
+
+  {% include archive-single-talk.html %}
+
+  {% endif %}
+{% endfor %}
+
+<h2 id="active">
 Conferences and workshops
 </h2>
 
