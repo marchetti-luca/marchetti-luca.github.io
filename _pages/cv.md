@@ -9,6 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-If file does not load below, click [THIS LINK](https://marchetti-luca.github.io/files/230606_CV.pdf) to download.
+If file does not load below, click [THIS LINK](https://marchetti-luca.github.io/files/230626_CV.pdf) to download.
 
-<embed src="{{ site.baseurl }}/files/230606_CV.pdf" width="650" height="800" type='application/pdf'>
+<embed src="{{ site.baseurl }}/files/230626_CV.pdf" width="650" height="800" type='application/pdf'>
