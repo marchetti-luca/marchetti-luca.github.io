@@ -16,8 +16,4 @@ General relativity and quantum mechanics are the two fundamental physical theori
 From the perspective of quantum gravity, the continuum flow of time and space that we experience in our everyday lives is only emergent, resulting from the collective behavior of
 fundamental “quantum gravity atoms” living outside of space and time, like molecules in a liquid. Studying quantum gravity means understanding not only what are the properties that characterize these “quantum gravity atoms” and what kind of processes they undergo, but also how our universe emerges from the behavior of these microscopic objects.
 
-<h2 id="active">
-Group Field Theories
-</h2>
-
 
