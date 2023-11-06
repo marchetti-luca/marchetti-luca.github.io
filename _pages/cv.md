@@ -11,4 +11,4 @@ redirect_from:
 
 If file does not load below, click [THIS LINK](https://marchetti-luca.github.io/files/231005_CV.pdf) to download.
 
-<embed src="{{ site.baseurl }}/files/230910_CV.pdf" width="650" height="800" type='application/pdf'>
+<embed src="{{ site.baseurl }}/files/231005_CV.pdf" width="650" height="800" type='application/pdf'>
