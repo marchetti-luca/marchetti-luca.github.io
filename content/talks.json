@@ -1,0 +1,135 @@
+[
+  {
+    "date": "May 2026",
+    "type": "Plenary talk",
+    "title": "Group field theory and emergent cosmology",
+    "venue": "LOOPS’26 · Hangzhou, China",
+    "featured": true
+  },
+  {
+    "date": "May 2026",
+    "type": "Short lecture",
+    "title": "Physics from Within: Observables and Quantum Reference Frames in Gravity",
+    "venue": "LOOPS’26 · Hangzhou, China",
+    "featured": true
+  },
+  {
+    "date": "14 Dec 2023",
+    "type": "Invited seminar",
+    "title": "Continuum relational physics in Group Field Theories and applications to cosmology",
+    "venue": "Perimeter Institute · Waterloo",
+    "slides": "/files/231214_PIslides.pdf",
+    "featured": true
+  },
+  {
+    "date": "11 Nov 2023",
+    "type": "Invited talk",
+    "title": "Cosmic emergence in quantum gravity",
+    "venue": "Quantum Gravity Beyond Spacetime · Western University",
+    "slides": "/files/231111_LON_slides.pdf",
+    "featured": true
+  },
+  {
+    "date": "14 Sep 2023",
+    "type": "Contributed talk",
+    "title": "Emergent cosmology from quantum gravity",
+    "venue": "COSMO ’23 · IFT Madrid",
+    "slides": "/files/230914_MAD_slides.pdf"
+  },
+  {
+    "date": "6 Sep 2023",
+    "type": "Invited talk",
+    "title": "Relational physics in Group Field Theories",
+    "venue": "GFT Cosmology Workshop · LMU Munich",
+    "slides": "/files/230906_LMU_slides.pdf"
+  },
+  {
+    "date": "14 Jul 2023",
+    "type": "Contributed talk",
+    "title": "Scalar cosmological perturbations from full quantum gravity",
+    "venue": "Quantum Gravity 2023 · Radboud University",
+    "slides": "/files/230714_RAD_slides.pdf"
+  },
+  {
+    "date": "22 Jun 2023",
+    "type": "Contributed talk",
+    "title": "Emergent cosmological physics from quantum gravity",
+    "venue": "CAP Congress · UNB Fredericton",
+    "slides": "/files/230622_UNB_slides.pdf"
+  },
+  {
+    "date": "17 Jun 2023",
+    "type": "Contributed talk",
+    "title": "Scalar cosmological perturbations from full quantum gravity",
+    "venue": "Theory Canada 15 · Mount Allison University",
+    "slides": "/files/230617_MAU_slides.pdf"
+  },
+  {
+    "date": "26 Apr 2023",
+    "type": "Invited seminar",
+    "title": "Relational physics from an emergent quantum gravity perspective",
+    "venue": "Quantum Gravity Seminar · FAU Erlangen-Nürnberg",
+    "slides": "/files/230426_FAU_slides.pdf"
+  },
+  {
+    "date": "18 Apr 2023",
+    "type": "Invited seminar",
+    "title": "Developments in Group Field Theory Cosmology",
+    "venue": "ILQGS · Online",
+    "slides": "/files/230418_ILQGS_slides.pdf"
+  },
+  {
+    "date": "28 Mar 2023",
+    "type": "Invited talk",
+    "title": "Emergent cosmological physics from quantum gravity",
+    "venue": "Foundations of Gravitational Physics · LMU Munich",
+    "slides": "/files/230328_LMUfoundations_slides.pdf"
+  },
+  {
+    "date": "8 Feb 2023",
+    "type": "Invited seminar",
+    "title": "(T)GFT and emergent cosmology",
+    "venue": "Gravity Seminar · UNB Fredericton",
+    "slides": "/files/230208_UNBseries.pdf"
+  },
+  {
+    "date": "9 Dec 2022",
+    "type": "Invited talk",
+    "title": "Emergent cosmology from (T)GFT condensates",
+    "venue": "Quantum Gravity, Hydrodynamics and Emergent Cosmology · LMU Munich",
+    "slides": "/files/221209_LMUemergent_slides.pdf"
+  },
+  {
+    "date": "20 Sep 2022",
+    "type": "Invited seminar",
+    "title": "Emergent cosmology from (T)GFT condensates",
+    "venue": "QUAST Seminar · OIST",
+    "slides": "/files/220920_OIST_slides.pdf"
+  },
+  {
+    "date": "15 Sep 2022",
+    "type": "Invited seminar",
+    "title": "Landau–Ginzburg analysis of (T)GFT models",
+    "venue": "Quantum Geometry and Field Theory Seminar · OIST",
+    "slides": "/files/220915_OIST_slides.pdf"
+  },
+  {
+    "date": "19 Jul 2022",
+    "type": "Contributed talk",
+    "title": "Cosmological inhomogeneities and relational perturbations of quantum gravity condensates",
+    "venue": "LOOPS ’22 · ENS de Lyon",
+    "slides": "/files/220719_LOOPS_slides.pdf"
+  },
+  {
+    "date": "18 Nov 2021",
+    "type": "Invited seminar",
+    "title": "Cosmology and relational dynamics from emergent quantum gravity",
+    "venue": "Gravity Seminar · UNB Fredericton"
+  },
+  {
+    "date": "18 Jun 2021",
+    "type": "Contributed talk",
+    "title": "Relational dynamics in an emergent spacetime context",
+    "venue": "Quantizing Time · Perimeter Institute"
+  }
+]
