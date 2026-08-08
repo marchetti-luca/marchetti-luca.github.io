@@ -228,30 +228,10 @@ export default function Home() {
         </div>
 
         <div className="talk-archive-heading">
-          <h3><Link href="/talks">Full archive</Link></h3>
+          <h3>
+            <Link href="/talks">Full archive <Arrow /></Link>
+          </h3>
           <span>{talkArchive.length} talks &amp; seminars</span>
-        </div>
-        <div className="talk-archive">
-          {talkArchive.map((talk, index) => (
-            <article key={`${talk.date}-${talk.title}-${index}`}>
-              <p>{talk.date}</p>
-              <h4>{talk.title}</h4>
-              <div>
-                <span>{talk.type}</span>
-                <span>{talk.venue}</span>
-                {talk.slides && (
-                  <a
-                    className="archive-slides-link"
-                    href={talk.slides}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Slides / PDF <Arrow />
-                  </a>
-                )}
-              </div>
-            </article>
-          ))}
         </div>
       </section>
 

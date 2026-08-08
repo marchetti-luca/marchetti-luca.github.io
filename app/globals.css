@@ -235,7 +235,9 @@ a {
   position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: transparent;
+  border: 1px solid rgba(234, 232, 255, 0.34);
+  background: linear-gradient(155deg, #173b52, #08263b 72%);
+  box-shadow: 12px 12px 0 rgba(92, 158, 173, 0.16);
 }
 
 .portrait-frame img {
@@ -244,8 +246,6 @@ a {
   object-fit: cover;
   object-position: center 46%;
   filter: saturate(0.82) contrast(1.02) brightness(0.94);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%);
   transition: filter 350ms ease, transform 600ms ease;
 }
 
@@ -900,7 +900,17 @@ a {
 }
 
 .talk-archive-heading h3 a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
   transition: color 180ms ease;
+}
+
+.talk-archive-heading h3 a span {
+  font-family: var(--sans);
+  font-size: 0.35em;
+  font-weight: 800;
+  transform: translateY(-0.35em);
 }
 
 .talk-archive-heading h3 a:hover,
@@ -1288,13 +1298,14 @@ footer .accent {
   .portrait-frame {
     aspect-ratio: 1 / 1.06;
     overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .portrait-frame img {
     object-fit: contain;
     object-position: center bottom;
-    -webkit-mask-image: none;
-    mask-image: none;
   }
 
   .portrait-caption {
