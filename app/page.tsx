@@ -93,10 +93,6 @@ export default function Home() {
               alt="Portrait of Luca Marchetti"
             />
           </div>
-          <div className="portrait-caption">
-            <span>OIST · Kavli IPMU</span>
-            <span>Japan</span>
-          </div>
         </div>
 
         <div className="hero-index" aria-hidden="true">

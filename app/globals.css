@@ -254,17 +254,6 @@ a {
   transform: scale(1.015);
 }
 
-.portrait-caption {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.7rem;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: #d6e2e7;
-}
-
 .hero-index {
   position: absolute;
   right: 1.8rem;
@@ -1306,11 +1295,6 @@ footer .accent {
   .portrait-frame img {
     object-fit: contain;
     object-position: center bottom;
-  }
-
-  .portrait-caption {
-    justify-content: center;
-    gap: 1.5rem;
   }
 
   .hero-index {
