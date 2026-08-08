@@ -104,16 +104,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="marquee" aria-label="Research topics">
-        <div>
-          <span>Quantum gravity</span><i>✦</i>
-          <span>Relational physics</span><i>✦</i>
-          <span>Cosmology</span><i>✦</i>
-          <span>Group field theory</span><i>✦</i>
-          <span>Quantum reference frames</span>
-        </div>
-      </section>
-
       <section className="section research-section" id="research">
         <div className="section-heading">
           <p className="section-number">01 / Research</p>

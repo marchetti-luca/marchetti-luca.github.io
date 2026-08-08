@@ -299,30 +299,6 @@ a {
   background: rgba(255, 255, 255, 0.25);
 }
 
-.marquee {
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-  background: #073352;
-  color: var(--paper-bright);
-}
-
-.marquee div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 1100px;
-  padding: 1.3rem 2rem;
-  font-family: var(--serif);
-  font-size: clamp(1rem, 1.5vw, 1.35rem);
-  font-style: italic;
-}
-
-.marquee i {
-  color: var(--accent);
-  font-size: 0.55rem;
-}
-
 .section {
   padding: clamp(5.5rem, 10vw, 9rem) 7vw;
 }
@@ -1156,9 +1132,22 @@ footer .accent {
 @media (max-width: 980px) {
   .site-header {
     grid-template-columns: 1fr auto;
+    row-gap: 0.85rem;
   }
 
   .site-header nav {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    gap: 1.2rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-header nav::-webkit-scrollbar {
     display: none;
   }
 
@@ -1202,22 +1191,28 @@ footer .accent {
 
 @media (max-width: 760px) {
   html {
-    scroll-padding-top: 4rem;
+    scroll-padding-top: 7rem;
   }
 
   .site-header {
-    padding: 1.2rem 5vw;
+    padding: 1rem 5vw 0.8rem;
   }
 
   .contact-link {
     font-size: 0.68rem;
   }
 
+  .site-header nav {
+    padding-top: 0.7rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.055em;
+  }
+
   .hero {
     display: flex;
     min-height: auto;
     flex-direction: column;
-    padding: 7.5rem 5vw 3rem;
+    padding: 9.5rem 5vw 3.5rem;
   }
 
   .hero-copy {
@@ -1247,8 +1242,13 @@ footer .accent {
   }
 
   .portrait-wrap {
-    width: min(44%, 180px);
-    margin: 2.75rem 0 0 auto;
+    width: min(58vw, 220px);
+    margin: 2.75rem auto 0;
+  }
+
+  .portrait-caption {
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   .hero-index {
