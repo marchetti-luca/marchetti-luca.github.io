@@ -122,7 +122,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 330px);
   min-height: min(900px, 100svh);
   overflow: hidden;
   padding: clamp(8.5rem, 14vh, 10rem) 6vw 4rem;
@@ -227,46 +227,28 @@ a {
 .portrait-wrap {
   z-index: 1;
   align-self: center;
-  width: min(100%, 250px);
+  width: min(100%, 320px);
   margin-left: auto;
 }
 
 .portrait-frame {
   position: relative;
-  aspect-ratio: 1 / 1.06;
-  overflow: visible;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
   background: transparent;
-}
-
-.portrait-frame::after {
-  position: absolute;
-  z-index: -1;
-  inset: 12% 3% 2%;
-  content: "";
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at 50% 48%,
-    rgba(186, 209, 205, 0.17),
-    rgba(92, 158, 173, 0.07) 48%,
-    transparent 72%
-  );
-  filter: blur(5px);
-  pointer-events: none;
 }
 
 .portrait-frame img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  filter: saturate(0.82) contrast(1.02) brightness(0.94)
-    drop-shadow(0 1.1rem 1.6rem rgba(0, 0, 0, 0.25));
+  object-fit: cover;
+  object-position: center 46%;
+  filter: saturate(0.82) contrast(1.02) brightness(0.94);
   transition: filter 350ms ease, transform 600ms ease;
 }
 
 .portrait-frame:hover img {
-  filter: saturate(0.96) contrast(1.02) brightness(0.98)
-    drop-shadow(0 1.1rem 1.6rem rgba(0, 0, 0, 0.25));
+  filter: saturate(0.96) contrast(1.02) brightness(0.98);
   transform: scale(1.015);
 }
 
@@ -898,6 +880,7 @@ a {
   border-bottom: 1px solid var(--line-dark);
 }
 
+.talk-archive-heading h2,
 .talk-archive-heading h3 {
   margin: 0;
   font-family: var(--serif);
@@ -936,6 +919,7 @@ a {
   font-size: 0.75rem;
 }
 
+.talk-archive h3,
 .talk-archive h4 {
   margin: 0;
   font-family: var(--serif);
@@ -959,6 +943,99 @@ a {
   font-weight: 750;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.talk-archive-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: clamp(3.5rem, 7vw, 6rem) 0 0 calc(20% + 2vw);
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.talk-archive-cta p,
+.talk-archive-cta span {
+  margin: 0;
+}
+
+.talk-archive-cta p {
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.talk-archive-cta span {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 1rem;
+}
+
+.talk-archive-cta > a {
+  flex: 0 0 auto;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid currentColor;
+  color: #285f75;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.talk-archive-cta > a:hover,
+.talk-archive-cta > a:focus-visible {
+  color: var(--accent);
+}
+
+.talks-page {
+  min-height: 100vh;
+  background: var(--night-deep);
+  color: var(--paper-bright);
+}
+
+.talks-page-header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.talks-page-hero {
+  min-height: min(650px, 72svh);
+}
+
+.talks-page-body {
+  padding: clamp(5rem, 9vw, 8rem) 7vw;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(234, 232, 255, 0.42), transparent 27%),
+    linear-gradient(145deg, #c9dadd, #bad1cd 55%, #a9c4cf);
+  color: var(--ink);
+}
+
+.talks-page-body .talk-archive-heading {
+  margin-top: 0;
+}
+
+.talks-page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.2rem 7vw;
+  border-top: 1px solid var(--line);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.talks-page-footer a:hover,
+.talks-page-footer a:focus-visible {
+  color: var(--accent);
 }
 
 .cv-section {
@@ -1179,6 +1256,10 @@ footer .accent {
     margin-left: 0;
   }
 
+  .talk-archive-cta {
+    margin-left: 0;
+  }
+
   .talk-archive {
     grid-template-columns: 1fr;
   }
@@ -1244,6 +1325,16 @@ footer .accent {
   .portrait-wrap {
     width: min(58vw, 220px);
     margin: 2.75rem auto 0;
+  }
+
+  .portrait-frame {
+    aspect-ratio: 1 / 1.06;
+    overflow: visible;
+  }
+
+  .portrait-frame img {
+    object-fit: contain;
+    object-position: center bottom;
   }
 
   .portrait-caption {
@@ -1375,6 +1466,12 @@ footer .accent {
   }
 
   .cv-callout {
+    flex-direction: column;
+  }
+
+  .talk-archive-cta,
+  .talks-page-footer {
+    align-items: flex-start;
     flex-direction: column;
   }
 

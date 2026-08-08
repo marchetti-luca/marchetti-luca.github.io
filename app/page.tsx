@@ -43,7 +43,7 @@ export default function Home() {
         <nav aria-label="Primary navigation">
           <a href="#research" onClick={(event) => scrollTo(event, "research")}>Research</a>
           <a href="#publications" onClick={(event) => scrollTo(event, "publications")}>Publications</a>
-          <a href="#talks" onClick={(event) => scrollTo(event, "talks")}>Talks</a>
+          <Link href="/talks">Talks</Link>
           <a href="#cv" onClick={(event) => scrollTo(event, "cv")}>CV</a>
         </nav>
         <a className="contact-link" href="mailto:luca.marchetti@ipmu.jp">
@@ -227,31 +227,14 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="talk-archive-heading">
-          <h3>Full archive</h3>
-          <span>{talkArchive.length} talks &amp; seminars</span>
-        </div>
-        <div className="talk-archive">
-          {talkArchive.map((talk, index) => (
-            <article key={`${talk.date}-${talk.title}-${index}`}>
-              <p>{talk.date}</p>
-              <h4>{talk.title}</h4>
-              <div>
-                <span>{talk.type}</span>
-                <span>{talk.venue}</span>
-                {talk.slides && (
-                  <a
-                    className="archive-slides-link"
-                    href={talk.slides}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Slides / PDF <Arrow />
-                  </a>
-                )}
-              </div>
-            </article>
-          ))}
+        <div className="talk-archive-cta">
+          <div>
+            <p>Full archive</p>
+            <span>{talkArchive.length} talks &amp; seminars, with slides where available</span>
+          </div>
+          <Link href="/talks">
+            Browse all talks <Arrow />
+          </Link>
         </div>
       </section>
 
