@@ -244,6 +244,8 @@ a {
   object-fit: cover;
   object-position: center 46%;
   filter: saturate(0.82) contrast(1.02) brightness(0.94);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%);
   transition: filter 350ms ease, transform 600ms ease;
 }
 
@@ -897,6 +899,15 @@ a {
   text-transform: uppercase;
 }
 
+.talk-archive-heading h3 a {
+  transition: color 180ms ease;
+}
+
+.talk-archive-heading h3 a:hover,
+.talk-archive-heading h3 a:focus-visible {
+  color: #285f75;
+}
+
 .talk-archive {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -943,55 +954,6 @@ a {
   font-weight: 750;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.talk-archive-cta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: clamp(3.5rem, 7vw, 6rem) 0 0 calc(20% + 2vw);
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--line-dark);
-  border-bottom: 1px solid var(--line-dark);
-}
-
-.talk-archive-cta p,
-.talk-archive-cta span {
-  margin: 0;
-}
-
-.talk-archive-cta p {
-  color: var(--accent);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.talk-archive-cta span {
-  display: block;
-  margin-top: 0.3rem;
-  color: var(--ink-soft);
-  font-family: var(--serif);
-  font-size: 1rem;
-}
-
-.talk-archive-cta > a {
-  flex: 0 0 auto;
-  padding-bottom: 0.15rem;
-  border-bottom: 1px solid currentColor;
-  color: #285f75;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 180ms ease;
-}
-
-.talk-archive-cta > a:hover,
-.talk-archive-cta > a:focus-visible {
-  color: var(--accent);
 }
 
 .talks-page {
@@ -1256,10 +1218,6 @@ footer .accent {
     margin-left: 0;
   }
 
-  .talk-archive-cta {
-    margin-left: 0;
-  }
-
   .talk-archive {
     grid-template-columns: 1fr;
   }
@@ -1335,6 +1293,8 @@ footer .accent {
   .portrait-frame img {
     object-fit: contain;
     object-position: center bottom;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .portrait-caption {
@@ -1469,7 +1429,6 @@ footer .accent {
     flex-direction: column;
   }
 
-  .talk-archive-cta,
   .talks-page-footer {
     align-items: flex-start;
     flex-direction: column;
