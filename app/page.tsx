@@ -87,10 +87,9 @@ export default function Home() {
 
         <div className="portrait-wrap">
           <div className="portrait-frame">
-            {/* The source portrait is pre-sized and compressed for this layout. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/luca-marchetti.webp"
+              src="/luca-marchetti-cutout.png"
               alt="Portrait of Luca Marchetti"
             />
           </div>
